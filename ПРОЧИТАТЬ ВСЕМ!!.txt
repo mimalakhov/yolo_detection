@@ -1,0 +1,10 @@
+Запустить обучение:
+python train.py --img 720 --cfg ./models/yolov5m.yaml --hyp ./data/hyps/hyp.VOC.yaml --batch 16 --epochs 70 --data ./notes_data.yaml --weights ./models/yolov5m.pt --optimizer AdamW --workers 16 --name yolo_road_det/
+
+Данные находятся в папке Notes_Dataset
+images - картинки, разделённые на тренировку и валидацию 
+labels - метки, построенные на основе программулины
+
+Результаты моей попытки запустить обучение лежат в папке yolov5\runs\train\yolo_road_det
+
+В ноутбуке yolo_word_detection.ipynb насрано (дурацкие пути). Те примеры, которые там есть, переписаны мной в файлы, лежащие в папке code
